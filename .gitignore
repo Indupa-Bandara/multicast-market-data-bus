@@ -1,0 +1,6 @@
+target/
+wire/fuzz/target/
+wire/fuzz/corpus/
+wire/fuzz/artifacts/
+**/proptest-regressions/
+.DS_Store

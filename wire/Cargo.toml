@@ -1,0 +1,12 @@
+[package]
+name = "wire"
+description = "Fixed-layout, little-endian wire protocol for the reliable multicast market-data bus"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Intentionally none: decoding is plain bounds-checked slice reads, no unsafe.
+
+[dev-dependencies]
+proptest = "1.4"

@@ -1,0 +1,9 @@
+[package]
+name = "retx-log"
+description = "Sender-side retransmit log (ring indexed by sequence number) and rate-limited NAK server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wire = { path = "../wire" }

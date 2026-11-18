@@ -1,0 +1,15 @@
+[package]
+name = "net"
+description = "Network layer: deterministic simulated links and real UDP/multicast endpoints"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+socket2 = "0.5"
+
+[dev-dependencies]
+wire = { path = "../wire" }
+retx-log = { path = "../retx-log" }
+sequencer = { path = "../sequencer" }
+recovery = { path = "../recovery" }

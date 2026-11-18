@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["wire", "net", "sequencer", "retx-log", "recovery", "loadgen", "demo"]
+# wire/fuzz is a separate cargo-fuzz package (needs nightly) and is not a workspace member.
+exclude = ["wire/fuzz"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[profile.release]
+debug = 1          # symbols for perf/flamegraphs
+lto = "thin"
+codegen-units = 1

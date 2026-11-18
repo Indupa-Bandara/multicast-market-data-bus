@@ -1,0 +1,13 @@
+[package]
+name = "sequencer"
+description = "Assigns gap-free sequence numbers, batches messages into packets, sends heartbeats"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wire = { path = "../wire" }
+retx-log = { path = "../retx-log" }
+
+[dev-dependencies]
+proptest = "1.4"

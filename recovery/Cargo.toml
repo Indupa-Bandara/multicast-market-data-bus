@@ -1,0 +1,12 @@
+[package]
+name = "recovery"
+description = "Sans-IO receiver state machine: gap detection, reorder buffer, NAK backoff, in-order delivery"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wire = { path = "../wire" }
+
+[dev-dependencies]
+proptest = "1.4"

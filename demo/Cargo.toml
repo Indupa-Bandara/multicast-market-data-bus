@@ -1,0 +1,13 @@
+[package]
+name = "demo"
+description = "Runnable sender and receiver that exercise the full stack over real UDP multicast"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+wire = { path = "../wire" }
+net = { path = "../net" }
+sequencer = { path = "../sequencer" }
+retx-log = { path = "../retx-log" }
+recovery = { path = "../recovery" }
